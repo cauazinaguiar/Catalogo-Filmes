@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #090909;
+  }
+  
+  .center {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .carrossel {
+    height: 250px;
+    position: relative;
+  }
+  
+  .carrossel .switchLeft,
+  .carrossel .switchRight {
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 45px;
+    line-height: 250px;
+    font-size: 40px;
+    text-align: center;
+    top: 0;
+    z-index: 3;
+    background-color: #57575787;
+    cursor: pointer;
+  }
+  
+  .carrossel .switchLeft {
+    position: absolute;
+    left: 0;
+  }
+  
+  .carrossel .switchRight {
+    position: absolute;
+    right: 0;
+  }
+  
+  .carrosselBox {
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carrosselBox img {
+    min-width: 147px;
+    max-width: 147px;
+    height: 210px;
+    background-size: cover;
+    background-color: rgb(226, 89, 89);
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+  }
+  
+  .carrosselBox img:hover {
+    transform: scale(1.1);
+    z-index: 5;
+  }

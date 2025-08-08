@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/">Cflix</a>
+            <div class="menu-mobile">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/">Séries</a></li>
+                    <li><a href="/">Filmes</a></li>
+                    <li><a href="/">Para Você</a></li>
+                    <li><a href="/">Minha Lista</a></li>
+                </ul>
+                <ul class="search-list">
+                    <li><a href="/">Sobre</a></li>
+                    <li><a href="/">Contato</a></li>
+                    <li><a><input type="text" placeholder="Digite o nome do filme ou série"></a></li>
+                    <li><a class="perfil" href="/">""</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-movie">
+            <img src="2025-04-01_19:14:48.jpg" class="main-movie-img" alt="...">
+            <div class="img-overlay">
+              <h5 id = "testenome" class="movie-title">Card title</h5>
+              <p class="movie-text">ano</p>
+              <p class="movie-text"><small>tipo</small></p>
+              <p class="movie-text"><small>duracao</small></p>
+              <p class="movie-text"><small>genero</small></p>
+              <button>Assistir</button>
+            </div>
+        </div>
+        
+        <div class="center">
+            <div class="carrossel">
+              <div class="carrosselBox">
+                <!-- aqui fica o conteudo dinamico -->
+              </div>
+              <a
+                class="switchLeft sliderButton btnstyle"
+                onclick="scrollLeft()"
+              >
+                <
+              </a>
+              <a
+                class="switchRight sliderButton btnstyle"
+                onclick="scrollRight()"
+              >
+                >
+              </a>
+            </div>
+          </div>
+
+    </main> 
+    <!-- <footer>
+        <p class="pe">2025 CFLIX - Todos os direitos reservados</p>
+    </footer> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
