@@ -24,7 +24,7 @@ function scrollRight() {
 }
 
 async function showMovies(erro) {
-   const apiKey = "da052838b7de390562880b8219bc85f4";
+   const apiKey = "//api";
  
    try {
      const response = await axios.get(
