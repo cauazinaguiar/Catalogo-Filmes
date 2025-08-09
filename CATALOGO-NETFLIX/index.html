@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="#">Cflix</a>
+            <div class="menu-mobile">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Para Você</a></li>
+                    <li><a href="#">Minha Lista</a></li>
+                </ul>
+                <ul class="search-list">
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li>
+                        <input class="input" type="text" placeholder="Digite o nome do filme ou série" id="searchInput">
+                    </li>
+                    <li>
+                        <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-media">
+            <img id="main-media-img" src="" class="main-media-img" alt="Filme em destaque">
+            <div class="img-overlay">
+              <h5 id="media-title" class="media-title">Card title</h5>
+              <p id="media-type" class="media-text"><small>tipo</small></p>
+              <p id="media-year" class="media-text">ano</p>
+              <p id="media-length" class="media-text"><small>duracao</small></p>
+              <p id="media-genres" class="media-text"><small>genero</small></p>
+              <button class="btn-assistir">Assistir</button>
+            </div>
+        </div> 
+        
+        <div class="carrossel">
+            <div class="carrosselBox">
+                </div>
+            <div class="switchLeft sliderButton btnstyle">&lt;</div>
+            <div class="switchRight sliderButton btnstyle">&gt;</div>
+        </div>
+
+        <div id="media-modal" class="modal-overlay">
+          <div class="modal-content">
+              <button class="modal-close">&times;</button>
+              <div class="modal-body">
+                  <img id="modal-poster" src="" alt="Poster">
+                  <div class="modal-details">
+                      <h3 id="modal-title"></h3>
+                      <p><strong>Tipo:</strong> <span id="modal-type"></span></p>
+                      <p><strong>Ano:</strong> <span id="modal-year"></span></p>
+                      <p><strong>Duração:</strong> <span id="modal-length"></span></p>
+                      <p><strong>Gêneros:</strong> <span id="modal-genres"></span></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </main>  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
